@@ -15,11 +15,11 @@ BST<std::string> makeTree(const char* filename) {
     }
     char ch;
     std::string word = "";
-    while(!file.eof()) {
+    while (!file.eof()) {
         ch = file.get();
-        if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122))
+        if ((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122)) {
             word += tolower(ch);
-        else {
+        } else {
             Ttree.add(word);
             word = "";
         }
