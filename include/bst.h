@@ -21,7 +21,7 @@ class BST {
         root->count = 1;
         root->left = root->right = nullptr;
       } else if (root->val > val) {
-        root->levv = addNode(root->left, val);
+        root->left = addNode(root->left, val);
       } else if (root->val < val) {
         root->right = addNode(root->right, val);
       } else {
